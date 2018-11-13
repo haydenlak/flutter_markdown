@@ -219,6 +219,6 @@ class Markdown extends MarkdownWidget {
 
   @override
   Widget build(BuildContext context, List<Widget> children) {
-    return new ListView(padding: padding, children: children);
+    return new ListView(physics: const NeverScrollableScrollPhysics(), padding: padding, children: children);
   }
 }
